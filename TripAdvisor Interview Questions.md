@@ -2,31 +2,34 @@ TripAdvisor Interview Questions
 ===============================
 
 1. **Given an array of non negative integers, and a non negative sum, write a method that returns the total number of pairs of integers that add up to the sum. The array can contain repeated numbers.**  
-TwoSumProblem
+TwoSumProblem - HashMap<>
 
 * **Given a list of coins and the total amount. Calculate the minimum number of coins can be used to reach the total amount.**  
-CoinChange
+CoinChange - Dynamic programming, fill dp with amount + 1, two loop, if i - coin >= 0
 
 * **Implement a function on a binary search that receives two nodes and returns its common ancestor.**  
-LowestCommonAncestorBST
+LowestCommonAncestorBST  if root between n1 and n2 -> return node.val, else if root.val > both -> go left, else go right
 
 * **Code conway's game of life.**  
-ConwaysGameOfLife
+ConwaysGameOfLife  when 1 (live) dies -> -1, when 0 reproduce -> 2
 
 * **Verify if a binary tree is a binary search tree.**  
-CheckBST
+CheckBST  recursive (change intervals, when going left or right), iterative (inorder traversal)
 
 * **Implement a queue using stacks.**  
-QueueStack
+QueueStack two stacks -> when pushing, we add to the first stack. When pop, we get from the second stack, if not second stack, we push all element to the second element
 
 * **Convert an int to a string without casting.**  
-Itoa
-
+Itoa   if > 0 positive = true else positive = false 
+loop while n != 0
+appended = n % 10
+n == // 10
+finally append
 * **Write a tic tac toe game.**  
 TicTacToe
 
 * **Intersect two sorted list.**  
-IntersectionOfTwoSortedArrays
+IntersectionOfTwoSortedArrays  
 
 * **Count number of islands of 1s in a 1/0 matrix.**  
 NumberOfIslands (Not finished)
